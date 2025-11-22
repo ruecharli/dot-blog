@@ -1,5 +1,5 @@
 banner:
-logo: /assets/icon.png
+logo: icon.png
 
 title: Ruecharli
 subtitle: Worldbuilding Resources, Personal Projects, and Failures
@@ -8,9 +8,11 @@ theme: minima
 minima:
   skin: auto
   nav_pages:
+    - index
     - search
   date_format: "%e %B %Y at %R"
 
 author: Rue Charli (she/her)
 email: "contact@ruecharli.blog"
 description: Long-time worldbuilding enthusiast. My goal is to create resources for aspiring worldbuilders, specifically related to cartography, astronomy, and calendars.
+
