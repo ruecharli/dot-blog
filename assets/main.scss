@@ -26,6 +26,7 @@ $on-large:         $on-laptop !default;
 $brand-color: pink;
 
 @import "minima";
+.site-header {border: none;}
 
 a {
   color: pink;
