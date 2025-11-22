@@ -1,0 +1,20 @@
+---
+---
+
+@font-face {
+  font-family: "Roboto Slab";
+  src:
+    local("Roboto Slab"),
+    url("https://ruecharli.github.io/dot-blog/assets/fonts/RobotoSlab-Regular.ttf"),
+    url("RobotoSlab-Regular.ttf");
+}
+
+$base-font-family: "Roboto Slab" !default;
+
+$brand-color: pink;
+
+@import "minima";
+
+a {
+  color: pink;
+}
