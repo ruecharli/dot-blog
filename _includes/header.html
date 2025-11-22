@@ -1,10 +1,20 @@
-<header class="site-header">
+<header class="site-header" style="background-image: url('{{ site.banner | escape | prepend: "/assets/" | relative_url  }}');">
 
   <div class="wrapper">
+    <div class="img-container">
+      {% if site.logo %}
+        <img alt="logo" src="{{ site.logo | escape | prepend: "/assets/" | relative_url }}"/>
+      {% endif %}
+    </div>
+    
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
     {%- assign page_titles = site.pages | map: 'title' | compact %}
-    <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+    
+    <h1 class="site-title">
+      <a rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+    </h1>
+    <h2>{{ site.subtitle | escape}}</h2>
 
     {%- unless page_titles == empty %}
       <nav class="site-nav">
