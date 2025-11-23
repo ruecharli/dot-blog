@@ -1,5 +1,5 @@
 ---
 layout: home
-permalink:/home/
+permalink: /home/
 ---
 home page text
