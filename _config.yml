@@ -15,14 +15,19 @@ minima:
   date_format: "%e %b %Y @ %R AWST"
   show_excerpts: true
   social_links:
-    - { icon: "compass-drafting", title: "Cartographers' Guild", url: "https://www.cartographersguild.com/member.php?u=191358" }
+    - icon: "compass-drafting"
+      title: "Cartographers' Guild"
+      url: "https://www.cartographersguild.com/member.php?u=191358"
   hide_site_feed_link: false
+
+instagram_username: rue_cr
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 url: "https://ruecharli.blog"
 
 author: Rue Charli (she/her)
 email: "contact@ruecharli.blog"
 description: Long-time worldbuilding enthusiast. My goal is to create resources for aspiring worldbuilders, specifically related to cartography, astronomy, and calendars.
-
-
-
