@@ -9,10 +9,16 @@ minima:
   skin: auto
   nav_pages:
     - index
-    - search
   date_format: "%e %B %Y at %R"
+  show_excerpts: true
+  social_links:
+    - title: Cartographers' Guild
+      icon: compass-drafting
+      url: https://www.cartographersguild.com/member.php?u=191358
+  hide_site_feed_link: false
 
 author: Rue Charli (she/her)
 email: "contact@ruecharli.blog"
 description: Long-time worldbuilding enthusiast. My goal is to create resources for aspiring worldbuilders, specifically related to cartography, astronomy, and calendars.
+
 
