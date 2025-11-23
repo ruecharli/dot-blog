@@ -20,5 +20,17 @@ layout: base
   <h1>404</h1>
 
   <p><strong>Page not found :(</strong></p>
-  <p>{{ jekyll.environment }}The requested page could not be found.</p>
+  <p>The requested page could not be found.</p>
+  <p>
+    My comments:
+    {% if jekyll.environment == 'production' -%}
+      {% if page.comments == false -%}
+        <div class="comments-disabled-message">
+          Comments have been disabled for this post.
+        </div>
+      {% else -%}
+        Comments have been enabled for this post.
+      {% endif -%}
+    {% endif -%}
+  </p>
 </div>
