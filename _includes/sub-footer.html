@@ -1,0 +1,7 @@
+{% if page.comments == false -%}
+  <div class="comments-disabled-message">
+    Comments have been disabled for this post.
+  </div>
+{% else -%}
+  {%- include comments.html -%}
+{% endif -%}
