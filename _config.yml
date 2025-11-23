@@ -44,7 +44,8 @@ email: contact@ruecharli.blog
 description: Long-time worldbuilding enthusiast. My goal is to create resources for aspiring worldbuilders, specifically related to cartography, astronomy, and calendars.
 
 # social links
-rss: rss
+rss: Subscribe via RSS
+cguild_username: rue_cr
 # twitter_username: jekyllrb
 # github_username:  jekyll
 # dribbble_username: jekyll
@@ -57,9 +58,9 @@ rss: rss
 # googleplus_username: +jekyll
 
 # Mastodon instances
-mastodon:
-  - username: rue_cr
-    instance: https://cartographersguild.com/member.php?u=191358
+# mastodon:
+# - username: jekyll
+#   instance: example.com
 # - username: jekyll2
 #   instance: example.com
 
@@ -83,3 +84,4 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
