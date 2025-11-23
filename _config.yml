@@ -19,8 +19,8 @@ minima:
   hide_site_feed_link: false
 
 url: "https://ruecharli.blog"
-baseurl: "/"
 
 author: Rue Charli (she/her)
 email: "contact@ruecharli.blog"
 description: Long-time worldbuilding enthusiast. My goal is to create resources for aspiring worldbuilders, specifically related to cartography, astronomy, and calendars.
+
