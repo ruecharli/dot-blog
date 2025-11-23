@@ -31,10 +31,6 @@ $brand-color: pink;
 @import "minima";
 .site-header {border: none;}
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
-
 a {
   color: pink;
 }
