@@ -5,9 +5,12 @@
   font-family: "Roboto Slab";
   src:
     local("Roboto Slab"),
+    url("https://ruecharli.blog/assets/fonts/RobotoSlab-Regular.ttf"),
     url("{{ site.url }}/assets/fonts/RobotoSlab-Regular.ttf"),
     url("/assets/fonts/RobotoSlab-Regular.ttf"),
-    url("RobotoSlab-Regular.ttf");
+    url("RobotoSlab-Regular.ttf"),
+    url("https://github.com/ruecharli/dot-blog/main/assets/fonts/RobotoSlab-Regular.ttf"),
+    url("ruecharli.github.io/dot-blog/assets/fontsRobotoSlab-Regular.ttf");
 }
 
 $base-font-family: "Roboto Slab" !default;
