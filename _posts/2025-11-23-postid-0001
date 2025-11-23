@@ -1,1 +1,283 @@
+---
+date: 2025-11-23 00:00:00 +0800
+modified_date:
+title: How To Use Blender To Simulate Plate Tectonics
+author: Rue Charli
+categories:
+  - geology
+  - plate-tectonics
+  - blender
+layout: post
+comments: true
+---
 
+In recent years, many aspiring worldbuilders have attempted to model realistic plate tectonics for their fictional worlds. The majority of in-depth tutorials use GPlates - a wonderfully scientific program, though hardly designed for worldbuilding. The interface is quite foreign to the average worldbuilder, eating away at time better spent learning more about plate tectonics.
+
+My proposition: Blender. With extensive help from the community, I've taken care of the technical side so that you can focus on pure animation.
+
+Thank you very much to tom_paul, ruuubick, and mereluk on Discord for the help!
+
+**Note:** Once set up, Blender may be used in place of GPlates in most tutorials. I recommend ~20 frames with a step of 50Ma. If you're new to plate tectonics, I thoroughly recommend using a tutorial by Artifexian or Worldbuilding Pasta.
+
+**Links:**
+- [Blender][link-blender]
+- [Artifexian][link-artifexian]
+- [Worldbuilding Pasta][link-worldbuilding-pasta]
+
+##The Tutorial:
+
+**1. Open Blender, then select New File > General**
+Click image for larger version. 
+
+Name:	Screenshot (1).png 
+Views:	3 
+Size:	709.3 KB 
+ID:	139763
+
+2. Select the objects Cube and Light, then press X to delete
+Click image for larger version. 
+
+Name:	Screenshot (2).png 
+Views:	0 
+Size:	462.6 KB 
+ID:	139764
+
+3. In Render properties, set Render Engine to Cycles and check the Film > Transparent box
+Click image for larger version. 
+
+Name:	Screenshot (3).png 
+Views:	1 
+Size:	435.7 KB 
+ID:	139765
+
+4. In Object properties, set the object to Camera, then fill the following Transform values (0 m, 0 m, 0 m, 90°, 0°, 0°, -1.000, 1.000, 1.000)
+Click image for larger version. 
+
+Name:	Screenshot (4).png 
+Views:	2 
+Size:	441.7 KB 
+ID:	139766
+
+5. In Data properties, set Type to Panoramic and Panorama Type to Equirectangular
+Click image for larger version. 
+
+Name:	Screenshot (5).png 
+Views:	0 
+Size:	445.6 KB 
+ID:	139767
+
+6. Hover over the central viewport and press Shift + A, then navigate to Mesh > UV Sphere and add it to the scene
+Click image for larger version. 
+
+Name:	Screenshot (6).png 
+Views:	0 
+Size:	478.4 KB 
+ID:	139768
+
+7. In Material properties, click New to add a new material
+Click image for larger version. 
+
+Name:	Screenshot (7).png 
+Views:	2 
+Size:	416.7 KB 
+ID:	139769
+
+8. Navigate to the Shading workspace, then select the Principled BSDF node and press X to delete it
+Click image for larger version. 
+
+Name:	Screenshot (8).png 
+Views:	2 
+Size:	541.3 KB 
+ID:	139770
+
+9. Press Shift + A, then begin typing to find and add an Attribute node
+Click image for larger version. 
+
+Name:	Screenshot (9).png 
+Views:	0 
+Size:	523.3 KB 
+ID:	139771
+
+10. Type vertex_color in the Name text box, then connect the Color socket to the Surface socket by clicking and dragging
+Click image for larger version. 
+
+Name:	Screenshot (10).png 
+Views:	0 
+Size:	522.1 KB 
+ID:	139772
+
+11. Navigate back to the Layout workspace and use Shift + A to add a Blank Grease Pencil object
+Click image for larger version. 
+
+Name:	Screenshot (11).png 
+Views:	1 
+Size:	470.5 KB 
+ID:	139773
+
+12. In Material properties, use the - button to remove the selected material slot
+Click image for larger version. 
+
+Name:	Screenshot (12).png 
+Views:	1 
+Size:	459.1 KB 
+ID:	139774
+
+13. Navigate to the Geometry Nodes workspace, then click New to create a new modifier
+Click image for larger version. 
+
+Name:	Screenshot (13).png 
+Views:	0 
+Size:	314.1 KB 
+ID:	139775
+
+14. In Modifiers properties, disable the Edit Mode and Realtime toggles, then unlink the Geometry sockets in the central pane by clicking and dragging
+Click image for larger version. 
+
+Name:	Screenshot (14).png 
+Views:	0 
+Size:	332.0 KB 
+ID:	139776
+
+15. Add the following nodes using Shift + A and link them by clicking and dragging (see image; I am not going to type all of this)
+Click image for larger version. 
+
+Name:	Screenshot (15).png 
+Views:	4 
+Size:	401.2 KB 
+ID:	139777
+
+16. Set Radius to 0.003 m, both Float dropdown menus to Color, both Name text boxes to vertex_color, Material to Material.001 (see image)
+Click image for larger version. 
+
+Name:	Screenshot (16).png 
+Views:	3 
+Size:	403.6 KB 
+ID:	139778
+
+17. Navigate to the Layout workspace and use Shift + A to add another UV Sphere
+Click image for larger version. 
+
+Name:	Screenshot (17).png 
+Views:	0 
+Size:	456.0 KB 
+ID:	139779
+
+18. In Material properties, click New to add a new material
+Click image for larger version. 
+
+Name:	Screenshot (18).png 
+Views:	2 
+Size:	430.2 KB 
+ID:	139780
+
+19. Navigate to the Shading workspace, then select the Principled BSDF node and press X to delete it. Next, use Shift + A to add an Image Texture node
+Click image for larger version. 
+
+Name:	Screenshot (19).png 
+Views:	1 
+Size:	527.2 KB 
+ID:	139781
+
+20. Click Open to import your base globe texture (I suggest using the graticles.png file attached), then attach it to the Material Output node
+Click image for larger version. 
+
+Name:	Screenshot (20).png 
+Views:	3 
+Size:	530.3 KB 
+ID:	139782
+Click image for larger version. 
+
+Name:	graticles.png 
+Views:	3 
+Size:	5.4 KB 
+ID:	139783
+
+21. Navigate back to the Layout workspace, then use the toggles to hide objects Camera and Sphere, then disable Sphere and Sphere.001. Finally, select the GPencil object
+Click image for larger version. 
+
+Name:	Screenshot (21).png 
+Views:	2 
+Size:	420.1 KB 
+ID:	139784
+
+22. Set Viewport Shading to Material Preview, then set Object Mode to Draw Mode
+Click image for larger version. 
+
+Name:	Screenshot (22).png 
+Views:	1 
+Size:	726.0 KB 
+ID:	139785
+
+23. Set Origin to Surface, then set Offset to 0.01 m
+Click image for larger version. 
+
+Name:	Screenshot (23).png 
+Views:	1 
+Size:	709.9 KB 
+ID:	139786
+
+24. Press N, then navigate to Tool > Color and select Color Attribute
+Click image for larger version. 
+
+Name:	Screenshot (24).png 
+Views:	2 
+Size:	655.6 KB 
+ID:	139787
+
+25. Enable the Pen brush asset, then navigate to Tool > Brush Settings. Set Radius to 0.003 m and Strength to 1.000
+Click image for larger version. 
+
+Name:	Screenshot (26).png 
+Views:	2 
+Size:	705.1 KB 
+ID:	139788
+
+26. Save your project!
+
+27. Experiment with the Color menu and different stroke options. Try using the Polyline stroke for a GPlates-like experience
+Click image for larger version. 
+
+Name:	Screenshot (28).png 
+Views:	5 
+Size:	722.5 KB 
+ID:	139789
+
+28. Press F12 (or Fn + F12) to render the current frame. Use Image > Save to save the current frame as an equirectangular image
+Click image for larger version. 
+
+Name:	Screenshot (29).png 
+Views:	3 
+Size:	681.0 KB 
+ID:	139790
+
+29. After closing the Render window, enable Onion Skin and Auto Keying
+Click image for larger version. 
+
+Name:	Screenshot (30).png 
+Views:	4 
+Size:	688.1 KB 
+ID:	139791
+
+30. Navigate to the second frame in the Timeline pane. Start drawing to see the effect of onion skins
+Click image for larger version. 
+
+Name:	Screenshot (31).png 
+Views:	6 
+Size:	763.4 KB 
+ID:	139792
+
+I do hope this is useful, and not too long. Please reply with any questions/feedback. Thanks! :)
+
+Tips/troubleshooting/FAQ:
+
+- "How do I copy a shape and paste it in a new frame?"
+-> In the Layout workspace, change from Draw Mode to Edit Mode in the top left. Select the vertices you would like to copy, then press Ctrl + C. Finally, switch to the next frame and press Ctrl + V.
+
+- "How do I rotate an area around the centre of the sphere?"
+-> In the Layout workspace, change from Draw Mode to Edit Mode in the top left. Select the vertices you would like to move, then choose the Rotate tool. Finally, find the chain link icon in the upper area of the screen and switch it from Median Point to 3D Cursor. Now, you can rotate the vertices around the centre of the sphere.
+
+- "My exported images appear backwards."
+-> Navigate to the Layout workspace, select the Camera object, open Object properties, and make sure Scale X is set to -1.000.
+
+- "How do I switch between perspective/orthographic view?"
+-> Use the button with a grid icon. It is on the right side of the 3D Viewport panel, in the Layout workspace. Alternatively, press Numpad 5.
