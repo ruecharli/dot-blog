@@ -1,5 +1,3 @@
-jekyll.environment: production
-
 # banner: download.png
 # logo: icon.png
 
@@ -25,3 +23,4 @@ url: "https://ruecharli.blog"
 author: Rue Charli (she/her)
 email: "contact@ruecharli.blog"
 description: Long-time worldbuilding enthusiast. My goal is to create resources for aspiring worldbuilders, specifically related to cartography, astronomy, and calendars.
+
