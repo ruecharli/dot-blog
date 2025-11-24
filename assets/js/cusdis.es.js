@@ -6,7 +6,7 @@ const makeIframeContent = (target) => {
   return `<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="${cssPath}">
+    <link rel="stylesheet" href="ruecharli.blog/assets/css/style.css">
     <base target="_parent" />
     <link>
     <script>
@@ -16,7 +16,7 @@ const makeIframeContent = (target) => {
     <style>
       :root {
         color-scheme: auto;
-        font: "Roboto Slab", serif;
+        font-family: "Roboto Slab", serif;
       }
     </style>
   </head>
@@ -35,7 +35,7 @@ function createIframe(target) {
     listenEvent(singleTonIframe, target);
   }
   singleTonIframe.srcdoc = makeIframeContent(target);
-  singleTonIframe.style.height = "100%";
+  singleTonIframe.style.height = "600px";
   singleTonIframe.style.width = "100%";
   singleTonIframe.style.border = "0";
   return singleTonIframe;
