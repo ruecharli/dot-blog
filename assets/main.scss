@@ -80,6 +80,8 @@ h3home {
   border-top: 1px solid $grey-color-dark;
   padding-top: 15px;
   padding-bottom: 0px;
+  width:1000px;
+  max-width:100%;
 }
 
 // Footer columns
@@ -105,11 +107,11 @@ h3home {
 
 @media screen and (min-width: $on-large) {
   .footer-col-1 {
-    width: calc(20% - (#{$spacing-unit} / 2));
+    width: calc(50% - (#{$spacing-unit} / 2));
   }
 
   .footer-col-2 {
-    width: calc(80% - (#{$spacing-unit} / 2));
+    width: calc(50% - (#{$spacing-unit} / 2));
   }
 
   /*.footer-col-3 {
@@ -138,7 +140,7 @@ h3home {
   }
 }
 
-// Display
+// Main area (_layout)
 
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
