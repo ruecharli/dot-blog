@@ -6,6 +6,7 @@ layout: default
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
+      <span><code>{{ page.categories }}</code></span>&nbsp;&nbsp;
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
@@ -23,4 +24,5 @@ layout: default
   {%- include comments.html -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  <p>test text</p>
 </article>
