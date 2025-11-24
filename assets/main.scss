@@ -60,10 +60,18 @@ h3home {
   margin-bottom: 0
 }
 
-// Borders
+// Header and footer
 
 .site-header {
   border-bottom: 1px solid $grey-color-dark;
+}
+
+.site-masthead {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: $spacing-unit / 2;
+  padding-bottom: $spacing-unit / 2;
 }
 
 .site-footer {
