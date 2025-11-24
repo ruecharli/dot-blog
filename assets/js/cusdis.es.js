@@ -2,7 +2,7 @@ window.CUSDIS = {};
 const makeIframeContent = (target) => {
   const host = target.dataset.host || "https://cusdis.com";
   const iframeJsPath = target.dataset.iframe || `${host}/js/iframe.umd.js`;
-  const cssPath = `${host}/js/style.css`;
+  const cssPath = `https://ruecharli.blog/assets/style.css`;
   return `<!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +15,8 @@ const makeIframeContent = (target) => {
     <\/script>
     <style>
       :root {
-        color-scheme: light;
+        color-scheme: auto;
+        font-family: "Roboto Slab", serif;
       }
     </style>
   </head>
