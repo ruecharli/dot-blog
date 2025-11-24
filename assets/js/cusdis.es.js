@@ -1,4 +1,6 @@
 window.CUSDIS = {};
+var rueContentWidth = require("https://ruecharli.blog/assets/main.scss");
+var jsContentWidth = rueContentWidth.cssContentWidth;
 const makeIframeContent = (target) => {
   const host = target.dataset.host || "https://cusdis.com";
   const iframeJsPath = target.dataset.iframe || `https://ruecharli.blog/assets/js/iframe.umd.js`;
@@ -35,8 +37,7 @@ function createIframe(target) {
     listenEvent(singleTonIframe, target);
   }
   singleTonIframe.srcdoc = makeIframeContent(target);
-  singleTonIframe.style.width = "100%";
-  singleTonIframe.style.height = "100%";
+  singleTonIframe.style.width = jsContentWidth;
   singleTonIframe.style.border = "0";
   return singleTonIframe;
 }
@@ -125,7 +126,6 @@ function initial() {
 }
 window.CUSDIS.initial = initial;
 initial();
-
 window.addEventListener('load', function () {
   let iframe = document.querySelector("#cusdis_thread iframe");
   if (iframe) {
