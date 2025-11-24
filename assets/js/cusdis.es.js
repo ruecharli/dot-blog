@@ -2,11 +2,11 @@ window.CUSDIS = {};
 const makeIframeContent = (target) => {
   const host = target.dataset.host || "https://ruecharli.blog";
   const iframeJsPath = target.dataset.iframe || `${host}/assets/js/iframe.umd.js`;
-  const cssPath = `${host}/assets/main.css`;
+  const cssPath = `${host}/assets/css/style.css`;
   return `<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <base target="_parent" />
     <link>
     <script>
