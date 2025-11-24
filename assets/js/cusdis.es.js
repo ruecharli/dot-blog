@@ -65,8 +65,6 @@ function listenEvent(iframe, target) {
                   darkModeQuery.matches ? "dark" : "light"
                 );
               }
-              let scrollHeight = iframe.contentWindow.document.body.scrollHeight; //test
-              iframe.style.height = scrollHeight + "px"; //test
             }
             break;
           case "resize":
@@ -134,5 +132,9 @@ window.addEventListener('load', function () {
       iframe.style.height = scrollHeight + "px";
     });
   observer.observe(iframe.contentWindow.document.body, { childList: true, subtree: true });
-  }
+  };
+  setTimeout(() => {
+    let scrollHeight = iframe.contentWindow.document.body.scrollHeight;
+    document.querySelector("#cusdis_thread iframe").style.height = scrollHeight + "px";
+  }, 3000);
 });
