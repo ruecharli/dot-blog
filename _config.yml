@@ -1,7 +1,7 @@
 title: Ruecharli
 author: Rue Charli
 email: contact@ruecharli.blog
-description: Worldbuilding Resources, Personal Projects, and Failures
+description: Worldbuilding guides, resources, and personal projects. My aim is to lower the barriers to entry and bring some much-deserved love to the technical worldbuilding community.
 
 # social links
 rss: Subscribe via RSS
@@ -29,7 +29,7 @@ show_excerpts: true
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
-  date_format: "%Y-%m-%d %R"
+  date_format: "%Y-%m-%d %R (UTC+8)"
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
@@ -43,3 +43,4 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
