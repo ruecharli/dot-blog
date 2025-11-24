@@ -41,7 +41,7 @@ $brand-color: pink;
 // Text
 
 a {
-  color: $brand-color-dimmed;
+  color: darken($brand-color, 15%);
 }
 
 a:visited {
@@ -49,8 +49,8 @@ a:visited {
 }
 
 code {
-  border: 1px solid $brand-color-dimmed;
-  background-color: $brand-color-dimmed;
+  border: 1px solid $brand-color;
+  background-color: $brand-color;
 }
 
 h3home {
