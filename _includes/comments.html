@@ -5,4 +5,15 @@
   data-page-url="{{ site.url }}{{ page.url }}"
   data-page-title="{{ page.title }}"
 ></div>
-<script defer src="https://ruecharli.blog/assets/js/cusdis.es.js"></script>
+<script defer src="https://ruecharli.blog/assets/js/cusdis.es.js">
+  window.addEventListener('load', function () {
+    let iframe = document.querySelector("#cusdis_thread iframe");
+    if (iframe) {
+      let observer = new MutationObserver(() => {
+        let scrollHeight = iframe.contentWindow.document.body.scrollHeight;
+        iframe.style.height = scrollHeight + "px";
+      });
+    observer.observe(iframe.contentWindow.document.body, { childList: true, subtree: true });
+    }
+  });
+</script>
