@@ -5,22 +5,4 @@
   data-page-url="{{ site.url }}{{ page.url }}"
   data-page-title="{{ page.title }}"
 ></div>
-<script defer src="https://cusdis.com/js/cusdis.es.js"></script>
-<script>
-const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-        if (mutation.addedNodes.length == 0) return;
-        const iframe = mutation.addedNodes[0];
-        if (iframe.tagName !== 'IFRAME') return;
-
-        const additionalStyles = `
-        .auto {
-            background: black;
-        }
-        `;
-        
-        iframe.srcdoc = iframe.srcdoc.replace('</style>', additionalStyles + '</style>');
-    });
-});
-observer.observe(document.getElementById("cusdis_thread"), { childList: true, subtree: true });
-</script>
+<script defer src="https://ruecharli.blog/assets/js/cusdis.es.js"></script>
