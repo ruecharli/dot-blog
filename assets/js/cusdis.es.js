@@ -15,7 +15,8 @@ const makeIframeContent = (target) => {
     <\/script>
     <style>
       :root {
-        color-scheme: dark;
+        color-scheme: auto;
+        font: "Roboto Slab", serif;
       }
     </style>
   </head>
