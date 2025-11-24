@@ -41,6 +41,7 @@ header_pages:
 theme: minima
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag
 
+production_url: "https://ruecharli.blog"

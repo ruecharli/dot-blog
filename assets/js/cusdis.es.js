@@ -35,8 +35,7 @@ function createIframe(target) {
     listenEvent(singleTonIframe, target);
   }
   singleTonIframe.srcdoc = makeIframeContent(target);
-  singleTonIframe.style.width = "100%";
-  singleTonIframe.style.height = "100%";
+  singleTonIframe.style.width = "95%";
   singleTonIframe.style.border = "0";
   return singleTonIframe;
 }
@@ -125,7 +124,6 @@ function initial() {
 }
 window.CUSDIS.initial = initial;
 initial();
-
 window.addEventListener('load', function () {
   let iframe = document.querySelector("#cusdis_thread iframe");
   if (iframe) {
