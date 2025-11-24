@@ -38,6 +38,8 @@ $brand-color: pink;
 @import "minima";
 .site-header {border: none;}
 
+// Text
+
 a {
   color: pink;
 }
@@ -57,6 +59,18 @@ h3home {
   border-bottom: 0px;
   margin-bottom: 0
 }
+
+// Borders
+
+.site-header {
+  border-bottom: 1px solid $grey-color-dark;
+}
+
+.site-footer {
+  border-top: 1px solid $grey-color-dark;
+}
+
+// Display
 
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
