@@ -1,6 +1,8 @@
 ---
 ---
 
+// Fonts
+
 @font-face {
   font-family: "Roboto Slab";
   src:
@@ -26,7 +28,11 @@ $on-laptop:        1200px !default;
 $on-medium:        $on-palm !default;
 $on-large:         $on-laptop !default;
 
+// Link/brand colour (not used due to "a" and "a:visited")
+
 $brand-color: pink;
+
+// Post-import settings (for precedence)
 
 @import "minima";
 .site-header {border: none;}
@@ -35,9 +41,22 @@ a {
   color: pink;
 }
 
+a:visited {
+ color: pink;
+}
+
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
   width:1000px;
   max-width:100%;
   margin:auto
+}
+
+h3home {
+  @include relative-font-size(1.375);
+
+  @media screen and (min-width: $on-large) {
+    @include relative-font-size(1.625);
+  };
+  margin-bottom: 0
 }
