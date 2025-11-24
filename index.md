@@ -1,4 +1,5 @@
 ---
 layout: home
+title: Home
 ---
-Welcome to my blog! This has taken me way too long to set up, and there are many things I wanted to do ... but couldn't figure out. Please ignore all the things that don't work (yet)!
+Welcome to my blog! I hope to create polished resources for aspiring worldbuilders, specifically related to cartography, astronomy, and calendars. For any queries, feel free to send me an email or comment on a post.
