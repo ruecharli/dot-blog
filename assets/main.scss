@@ -74,6 +74,24 @@ h3home {
   padding-bottom: $spacing-unit / 2;
 }
 
+#headercontainer {
+ display: grid;
+ align-items: left; 
+ grid-template-columns: 1fr 1fr;
+ column-gap: 5px;
+}
+
+/*
+#headermasthead {
+  max-width: 100%;
+  max-height:100%;
+}
+
+#headertitle {
+  font-size: 70px;
+}
+*/
+
 .site-footer {
   border-top: 1px solid $grey-color-dark;
   padding-top: 15px;
