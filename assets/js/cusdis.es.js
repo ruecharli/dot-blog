@@ -7,7 +7,7 @@ const makeIframeContent = (target) => {
 <html>
   <head>
     <link rel="stylesheet" href="${cssPath}">
-    <base target="_parent" />
+      <base target="_parent" />
     <link>
     <script>
       window.CUSDIS_LOCALE = ${JSON.stringify(window.CUSDIS_LOCALE)}
@@ -36,6 +36,7 @@ function createIframe(target) {
   }
   singleTonIframe.srcdoc = makeIframeContent(target);
   singleTonIframe.style.width = "100%";
+  singleTonIframe.style.height = "100%";
   singleTonIframe.style.border = "0";
   return singleTonIframe;
 }
