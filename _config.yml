@@ -1,7 +1,7 @@
 title: Ruecharli
 author: Rue Charli
 email: contact@ruecharli.blog
-description: Worldbuilding Resources, Personal Projects, and Failures
+description: Worldbuilding guides, resources, and personal projects. My aim is to lower the barriers to entry and bring some much-deserved love to the technical worldbuilding community.
 
 # social links
 rss: Subscribe via RSS
@@ -43,3 +43,4 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
