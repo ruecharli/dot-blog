@@ -35,7 +35,7 @@ function createIframe(target) {
     listenEvent(singleTonIframe, target);
   }
   singleTonIframe.srcdoc = makeIframeContent(target);
-  singleTonIframe.style.width = 100%;
+  singleTonIframe.style.width = "95%";
   singleTonIframe.style.border = "0";
   return singleTonIframe;
 }
