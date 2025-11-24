@@ -41,16 +41,16 @@ $brand-color: pink;
 // Text
 
 a {
-  color: pink;
+  color: $brand-color-dimmed;
 }
 
 a:visited {
- color: pink;
+ color: $brand-color;
 }
 
 code {
-  border: 1px solid $brand-color;
-  background-color: $brand-color;
+  border: 1px solid $brand-color-dimmed;
+  background-color: $brand-color-dimmed;
 }
 
 h3home {
