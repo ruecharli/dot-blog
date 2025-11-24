@@ -58,6 +58,7 @@ h3home {
   @media screen and (min-width: $on-large) {
     @include relative-font-size(1.625);
   };
+  line-height: 1.1;
   padding-bottom: 0px;
   border-bottom: 0px;
   margin-bottom: 0
