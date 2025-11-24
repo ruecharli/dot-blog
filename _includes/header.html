@@ -4,7 +4,12 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- if site.masthead -%}
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img class="site-masthead" src="{{ site.masthead | relative_url }} width="36" height="36"/>{{ site.title | escape }}</a>
+      <div id="headermasthead" href="{{ "/" | relative_url }}">
+        <img class="site-masthead" src="{{ site.masthead | relative_url }}/>
+      </div>
+      <div id="headertitle" class="site-title" rel="author" href="{{ "/" | relative_url }}">
+        {{ site.title | escape }}
+      </div>
     {%- else -%}
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     {%- endif -%}
