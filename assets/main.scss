@@ -48,6 +48,11 @@ a:visited {
  color: pink;
 }
 
+code {
+  border: 1px solid $brand-color;
+  background-color: $brand-color;
+}
+
 h3home {
   @include relative-font-size(1.375);
 
