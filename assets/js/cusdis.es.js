@@ -16,7 +16,6 @@ const makeIframeContent = (target) => {
     <style>
       :root {
         color-scheme: auto;
-        font-family: font-family, serif;
       }
     </style>
   </head>
