@@ -1,4 +1,6 @@
 title: Ruecharli
+masthead: /assets/icon.png
+
 author: Rue Charli
 email: contact@ruecharli.blog
 description: Worldbuilding guides, resources, and personal projects. My aim is to lower the barriers to entry and bring some much-deserved love to the technical worldbuilding community.
@@ -45,3 +47,4 @@ plugins:
   - jekyll-seo-tag
 
 production_url: "https://ruecharli.blog"
+
