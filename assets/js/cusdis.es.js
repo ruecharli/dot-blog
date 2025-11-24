@@ -65,6 +65,8 @@ function listenEvent(iframe, target) {
                   darkModeQuery.matches ? "dark" : "light"
                 );
               }
+              let scrollHeight = iframe.contentWindow.document.body.scrollHeight; //test
+              iframe.style.height = scrollHeight + "px"; //test
             }
             break;
           case "resize":
