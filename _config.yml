@@ -43,4 +43,5 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
+
+production_url: "https://ruecharli.blog"
