@@ -1,4 +1,5 @@
 ---
+sitemap_exclude: y
 ---
 
 // Fonts
@@ -45,13 +46,6 @@ a:visited {
  color: pink;
 }
 
-main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
-  width:1000px;
-  max-width:100%;
-  margin:auto
-}
-
 h3home {
   @include relative-font-size(1.375);
 
@@ -63,3 +57,12 @@ h3home {
   border-bottom: 0px;
   margin-bottom: 0
 }
+
+main {
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  width:1000px;
+  max-width:100%;
+  margin:auto
+}
+
+html { overflow-y: scroll; }
