@@ -6,7 +6,7 @@ const makeIframeContent = (target) => {
   return `<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="${cssPath}">
     <base target="_parent" />
     <link>
     <script>
@@ -16,7 +16,6 @@ const makeIframeContent = (target) => {
     <style>
       :root {
         color-scheme: auto;
-        font-family: $base-font-family;
       }
     </style>
   </head>
