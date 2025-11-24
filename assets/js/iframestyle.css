@@ -220,7 +220,7 @@
 }.bg-gray-200{
   --tw-bg-opacity: 1;
   background-color:rgba(229,231,235,var(--tw-bg-opacity))
-}.bg-blue-500{
+}.bg-pink-500{
   --tw-bg-opacity: 1;
   background-color:rgba(255,192,203,var(--tw-bg-opacity))
 }.dark .dark\:bg-transparent{
