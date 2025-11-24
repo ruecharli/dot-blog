@@ -2,7 +2,7 @@ window.CUSDIS = {};
 const makeIframeContent = (target) => {
   const host = target.dataset.host || "https://cusdis.com";
   const iframeJsPath = target.dataset.iframe || `${host}/js/iframe.umd.js`;
-  const cssPath = `https://ruecharli.blog/assets/main.css`;
+  const cssPath = `${host}/js/style.css`;
   return `<!DOCTYPE html>
 <html>
   <head>
@@ -15,8 +15,7 @@ const makeIframeContent = (target) => {
     <\/script>
     <style>
       :root {
-        color-scheme: auto;
-        font: "Roboto Slab", serif;
+        color-scheme: light;
       }
     </style>
   </head>
@@ -35,7 +34,6 @@ function createIframe(target) {
     listenEvent(singleTonIframe, target);
   }
   singleTonIframe.srcdoc = makeIframeContent(target);
-  singleTonIframe.style.height = "600px";
   singleTonIframe.style.width = "100%";
   singleTonIframe.style.border = "0";
   return singleTonIframe;
