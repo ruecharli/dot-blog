@@ -69,7 +69,7 @@ show_excerpts: true
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
-  date_format: "%e %b %Y @ %R AWST"
+  date_format: "%Y-%m-%d %R"
   skin: auto
   hide_site_feed_link: true
 hide_site_feed_link: true
@@ -86,5 +86,6 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
 
 
