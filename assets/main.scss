@@ -137,11 +137,11 @@ h3home {
 
     &:first-child {
       padding-right: $spacing-unit * .5;
-      padding-left: min(200px,($spacing-unit * .5));
+      padding-left: ($spacing-unit);
     }
 
     &:last-child {
-      padding-right: min(200px,($spacing-unit * .5));
+      padding-right: ($spacing-unit);
       padding-left: $spacing-unit * .5;
     }
   }
