@@ -143,29 +143,7 @@ Disallow: /
 User-agent: Gemini-Deep-Research
 Disallow: /
 
-User-agent: Google-CloudVertexBot
-Disallow: /
 
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: Google-Firebase
-Disallow: /
-
-User-agent: Google-NotebookLM
-Disallow: /
-
-User-agent: GoogleAgent-Mariner
-Disallow: /
-
-User-agent: GoogleOther
-Disallow: /
-
-User-agent: GoogleOther-Image
-Disallow: /
-
-User-agent: GoogleOther-Video
-Disallow: /
 
 User-agent: GPTBot
 Disallow: /
