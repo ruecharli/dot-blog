@@ -53,10 +53,6 @@ code {
   background-color: lighten($brand-color, 5%);
 }
 
-scrollpost {
-  margin-bottom: 0
-}
-
 h3home {
   @include relative-font-size(1.375);
 
